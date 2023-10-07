@@ -80,7 +80,7 @@ const columns: ColumnsType<DataType> = [
 ];
 
   const deleteItem = async (deleted: string) => {
-  const apiUrl = `https://week-15-resyanac.railway.internal/v1/tasks/${deleted}`;
+  const apiUrl = `https://week-15-rprasetyob-production.up.railway.app/v1/tasks/${deleted}`;
   const fetching = await fetch(apiUrl, {
                 method: 'DELETE'
             }); 
