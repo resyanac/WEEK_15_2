@@ -27,7 +27,7 @@ const TableForm: React.FC = () => {
 
 const fetchData = async () => {
 
-  const apiUrl = 'http://localhost:4000/v1/tasks';
+  const apiUrl = 'https://week-15-resyanac.railway.internal/v1/tasks';
   const fetching = await fetch(apiUrl, {
                 method: 'GET'
             }); 
@@ -80,7 +80,7 @@ const columns: ColumnsType<DataType> = [
 ];
 
   const deleteItem = async (deleted: string) => {
-  const apiUrl = `http://localhost:4000/v1/tasks/${deleted}`;
+  const apiUrl = `https://week-15-resyanac.railway.internal/v1/tasks/${deleted}`;
   const fetching = await fetch(apiUrl, {
                 method: 'DELETE'
             }); 

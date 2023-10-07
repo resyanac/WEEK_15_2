@@ -23,7 +23,7 @@ const { id } = useParams<{ id: string }>();
   const handleSubmit = (values: EditPage) => {
     console.log(values);
 
-    axios.patch(`http://localhost:4000/v1/tasks/${id}`, {
+    axios.patch(`https://week-15-resyanac.railway.internal/v1/tasks/${id}`, {
       id: id,
           status: values?.status,
 

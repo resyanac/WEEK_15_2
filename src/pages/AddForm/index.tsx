@@ -20,7 +20,7 @@ const AddForm = () => {
   const handleSubmit = async (values: FormProps) => {
     try {
       await axios.post(
-        'http://localhost:4000/v1/tasks',
+        'https://week-15-resyanac.railway.internal/v1/tasks',
         {
           task: values.task
         },
