@@ -27,7 +27,7 @@ const TableForm: React.FC = () => {
 
 const fetchData = async () => {
 
-  const apiUrl = 'https://week-15-resyanac.railway.internal/v1/tasks';
+  const apiUrl = 'https://week-15-rprasetyob-production.up.railway.app/v1/tasks';
   const fetching = await fetch(apiUrl, {
                 method: 'GET'
             }); 
